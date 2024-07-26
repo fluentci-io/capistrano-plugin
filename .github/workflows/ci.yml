@@ -29,7 +29,6 @@ jobs:
           GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Show Capistrano version
         run: |
-          fluentci run --wasm . help
           flox activate -- type cap
           flox activate -- cap --version
         working-directory: example
