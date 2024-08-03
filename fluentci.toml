@@ -1,12 +1,12 @@
 [package]
 authors = [
-  "Tsiry Sandratraina <tsiry.sndr@fluentci.io>"
+  "Tsiry Sandratraina <tsiry.sndr@fluentci.io>",
 ]
 description = "CI/CD Plugin for Capistrano"
-license = "MIT"
-name = "capistrano"
-version = "0.1.0"
 keywords = [
   "capistrano",
-  "deploy"
+  "deploy",
 ]
+license = "MIT"
+name = "capistrano"
+version = "0.1.1"

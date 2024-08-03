@@ -6,7 +6,7 @@ description = "A remote server automation and deployment tool written in Ruby"
 edition = "2021"
 license = "MIT"
 name = "capistrano"
-version = "0.1.0"
+version = "0.1.1"
 
 [lib]
 crate-type = [

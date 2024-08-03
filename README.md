@@ -11,6 +11,7 @@ Add the following command to your CI configuration file:
 
 ```bash
 fluentci run --wasm capistrano setup
+fluentci run --wasm capistrano deploy production
 ```
 
 ## Functions
@@ -18,6 +19,7 @@ fluentci run --wasm capistrano setup
 | Name      | Description                                |
 | --------- | ------------------------------------------ |
 | setup     | Install Capistrano                         |
+| deploy    | Deploy your application using Capistrano   |
 
 ## Code Usage
 
@@ -35,7 +37,7 @@ use fluentci_pdk::dag;
 
 // ...
 
-dag().call("https://pkg.fluentci.io/capistrano@v0.1.0?wasm=1", "setup", vec!["latest"])?;
+dag().call("https://pkg.fluentci.io/capistrano@v0.1.1?wasm=1", "setup", vec!["latest"])?;
 ```
 
 ## 📚 Examples
