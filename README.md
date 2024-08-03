@@ -10,7 +10,6 @@ This plugin install and run [Capistrano](https://capistranorb.com/) on your CI/C
 Add the following command to your CI configuration file:
 
 ```bash
-fluentci run --wasm capistrano setup
 fluentci run --wasm capistrano deploy production
 ```
 
@@ -37,7 +36,7 @@ use fluentci_pdk::dag;
 
 // ...
 
-dag().call("https://pkg.fluentci.io/capistrano@v0.1.1?wasm=1", "setup", vec!["latest"])?;
+dag().call("https://pkg.fluentci.io/capistrano@v0.1.1?wasm=1", "deploy", vec!["production"])?;
 ```
 
 ## 📚 Examples
